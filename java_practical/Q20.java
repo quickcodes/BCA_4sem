@@ -4,13 +4,13 @@ public class Q20{
     public static void main(String[] args){
         try{
             Scanner sc = new Scanner(System.in);
-            System.out.print("Enter your name: ");
-            String name = sc.nextLine();
+            System.out.print("Enter your ID: ");
+            int id = sc.nextInt();
 
             BufferedReader br = new BufferedReader(new FileReader("Q19.txt"));
             String line = br.readLine();
             while(line != null){
-                if(line.contains("Name")){
+	    if(line.contains("Name")){
                     System.out.println("{\n");
                     System.out.println(line);
                     line = br.readLine();
@@ -31,7 +31,7 @@ public class Q20{
 }
 
 // Output ->
-// Enter your name: Bill
+// Enter your id: 21
 // {
 
 //         Name: Bill Gates,
